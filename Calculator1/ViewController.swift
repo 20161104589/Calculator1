@@ -7,28 +7,21 @@
 //
 
 import UIKit
-
+var control:Int = 0
+var number_one:String = ""
 class ViewController: UIViewController {
-
+    var DisplayWindowAcknowledgement = false
     @IBAction func button1(_ sender: Any) {
-    }
-    @IBAction func button2(_ sender: Any) {
-    }
-    @IBAction func button3(_ sender: Any) {
-    }
-    @IBAction func button4(_ sender: Any) {
-    }
-    @IBAction func button5(_ sender: Any) {
-    }
-    @IBAction func button6(_ sender: Any) {
-    }
-    @IBAction func button7(_ sender: Any) {
-    }
-    @IBAction func button8(_ sender: Any) {
-    }
-    @IBAction func button9(_ sender: Any) {
-    }
-    @IBAction func button0(_ sender: Any) {
+        let button1=(sender as AnyObject).currentTitle
+        if(DisplayWindowAcknowledgement){
+            num.text=num.text!+button1!!
+        }
+        else{
+            num.text = button1!
+            if(button1 != "0"){
+                DisplayWindowAcknowledgement = true
+            }
+        }
     }
     @IBAction func button_dot(_ sender: Any) {
     }
@@ -48,6 +41,7 @@ class ViewController: UIViewController {
     }
     @IBAction func button_percent(_ sender: Any) {
     }
+    @IBOutlet weak var num: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
