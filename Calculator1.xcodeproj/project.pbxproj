@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D149670E2170A21800A33DFD /* timg.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D149670D2170A21800A33DFD /* timg.jpeg */; };
 		D1A5935E215B2E6800B074B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A5935D215B2E6800B074B0 /* AppDelegate.swift */; };
 		D1A59360215B2E6800B074B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A5935F215B2E6800B074B0 /* ViewController.swift */; };
 		D1A59363215B2E6800B074B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1A59361215B2E6800B074B0 /* Main.storyboard */; };
@@ -14,6 +15,12 @@
 		D1A59368215B2E6D00B074B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1A59366215B2E6D00B074B0 /* LaunchScreen.storyboard */; };
 		D1A59373215B2E6D00B074B0 /* Calculator1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A59372215B2E6D00B074B0 /* Calculator1Tests.swift */; };
 		D1A5937E215B2E6D00B074B0 /* Calculator1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A5937D215B2E6D00B074B0 /* Calculator1UITests.swift */; };
+		D1CF43672176D33A00E4FECE /* 330656-140QPJ40868的副本 2 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D1CF43662176D33A00E4FECE /* 330656-140QPJ40868的副本 2 2.jpg */; };
+		D1CF43692176D33E00E4FECE /* 330656-140QPJ40868的副本 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D1CF43682176D33E00E4FECE /* 330656-140QPJ40868的副本 4.jpg */; };
+		D1CF436B2176D34E00E4FECE /* 330656-140QPJ40868的副本 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D1CF436A2176D34E00E4FECE /* 330656-140QPJ40868的副本 5.jpg */; };
+		D1CF436D2176D68800E4FECE /* 330656-140QPJ40868的副本 2 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D1CF436C2176D68800E4FECE /* 330656-140QPJ40868的副本 2 3.jpg */; };
+		D1CF436F2176D6BA00E4FECE /* 330656-140QPJ40868的副本 3 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D1CF436E2176D6BA00E4FECE /* 330656-140QPJ40868的副本 3 2.jpg */; };
+		D1CF43712176D6EF00E4FECE /* 330656-140QPJ40868 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D1CF43702176D6EF00E4FECE /* 330656-140QPJ40868 2.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D149670D2170A21800A33DFD /* timg.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = timg.jpeg; path = ../../../../Downloads/timg.jpeg; sourceTree = "<group>"; };
 		D1A5935A215B2E6800B074B0 /* Calculator1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1A5935D215B2E6800B074B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1A5935F215B2E6800B074B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +55,12 @@
 		D1A59379215B2E6D00B074B0 /* Calculator1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Calculator1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1A5937D215B2E6D00B074B0 /* Calculator1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator1UITests.swift; sourceTree = "<group>"; };
 		D1A5937F215B2E6D00B074B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1CF43662176D33A00E4FECE /* 330656-140QPJ40868的副本 2 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "330656-140QPJ40868的副本 2 2.jpg"; path = "../../../../Downloads/330656-140QPJ40868的副本 2 2.jpg"; sourceTree = "<group>"; };
+		D1CF43682176D33E00E4FECE /* 330656-140QPJ40868的副本 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "330656-140QPJ40868的副本 4.jpg"; path = "../../../../Downloads/330656-140QPJ40868的副本 4.jpg"; sourceTree = "<group>"; };
+		D1CF436A2176D34E00E4FECE /* 330656-140QPJ40868的副本 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "330656-140QPJ40868的副本 5.jpg"; path = "../../../../Downloads/330656-140QPJ40868的副本 5.jpg"; sourceTree = "<group>"; };
+		D1CF436C2176D68800E4FECE /* 330656-140QPJ40868的副本 2 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "330656-140QPJ40868的副本 2 3.jpg"; path = "../../../../Downloads/330656-140QPJ40868的副本 2 3.jpg"; sourceTree = "<group>"; };
+		D1CF436E2176D6BA00E4FECE /* 330656-140QPJ40868的副本 3 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "330656-140QPJ40868的副本 3 2.jpg"; path = "../../../../Downloads/330656-140QPJ40868的副本 3 2.jpg"; sourceTree = "<group>"; };
+		D1CF43702176D6EF00E4FECE /* 330656-140QPJ40868 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "330656-140QPJ40868 2.jpg"; path = "../../../../Downloads/330656-140QPJ40868 2.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,10 +111,17 @@
 		D1A5935C215B2E6800B074B0 /* Calculator1 */ = {
 			isa = PBXGroup;
 			children = (
+				D149670D2170A21800A33DFD /* timg.jpeg */,
 				D1A5935D215B2E6800B074B0 /* AppDelegate.swift */,
 				D1A5935F215B2E6800B074B0 /* ViewController.swift */,
+				D1CF43702176D6EF00E4FECE /* 330656-140QPJ40868 2.jpg */,
+				D1CF43662176D33A00E4FECE /* 330656-140QPJ40868的副本 2 2.jpg */,
+				D1CF436E2176D6BA00E4FECE /* 330656-140QPJ40868的副本 3 2.jpg */,
+				D1CF436C2176D68800E4FECE /* 330656-140QPJ40868的副本 2 3.jpg */,
 				D1A59361215B2E6800B074B0 /* Main.storyboard */,
 				D1A59364215B2E6D00B074B0 /* Assets.xcassets */,
+				D1CF436A2176D34E00E4FECE /* 330656-140QPJ40868的副本 5.jpg */,
+				D1CF43682176D33E00E4FECE /* 330656-140QPJ40868的副本 4.jpg */,
 				D1A59366215B2E6D00B074B0 /* LaunchScreen.storyboard */,
 				D1A59369215B2E6D00B074B0 /* Info.plist */,
 			);
@@ -230,8 +251,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1A59368215B2E6D00B074B0 /* LaunchScreen.storyboard in Resources */,
+				D1CF43712176D6EF00E4FECE /* 330656-140QPJ40868 2.jpg in Resources */,
+				D1CF436F2176D6BA00E4FECE /* 330656-140QPJ40868的副本 3 2.jpg in Resources */,
+				D1CF43672176D33A00E4FECE /* 330656-140QPJ40868的副本 2 2.jpg in Resources */,
 				D1A59365215B2E6D00B074B0 /* Assets.xcassets in Resources */,
+				D149670E2170A21800A33DFD /* timg.jpeg in Resources */,
 				D1A59363215B2E6800B074B0 /* Main.storyboard in Resources */,
+				D1CF436B2176D34E00E4FECE /* 330656-140QPJ40868的副本 5.jpg in Resources */,
+				D1CF436D2176D68800E4FECE /* 330656-140QPJ40868的副本 2 3.jpg in Resources */,
+				D1CF43692176D33E00E4FECE /* 330656-140QPJ40868的副本 4.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
