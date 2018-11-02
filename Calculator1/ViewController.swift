@@ -19,6 +19,8 @@ class ViewController: UIViewController {
     var flag:String = ""
     var dian = 0
     var zero = 0
+    var z = 0
+    var some = [Double]()
     @IBOutlet weak var num: UITextField!
     @IBAction func button1(_ sender: Any) {
         let button1=(sender as AnyObject).currentTitle
@@ -37,19 +39,7 @@ class ViewController: UIViewController {
             {
                 num.text=num.text!+button1!!
             }
-            if(button1 == "0"&&dian == 0&&zero == 0)
-            {
-                num.text=num.text!+button1!!
-                zero = zero + 1
-            }
-            else if(button1 == "0"&&dian == 1)
-            {
-                num.text=num.text!+button1!!
-            }
-            else
-            {
-                num.text=num.text!
-            }
+           
         }
         else
         {
@@ -72,8 +62,23 @@ class ViewController: UIViewController {
         else
         {
             m = Double(num.text!)!
+            switch flag {
+            case "a" :   n = n + m
+                         flag = "a"
+                break
+            case "m" :   n = n - m
+                         flag = "a"
+                break
+            case "r" :   n = n * m
+                         flag = "a"
+                break
+            case "e" :   n = n / m
+                         flag = "a"
+                break
+            default:
+                break
+            }
             num.text=""
-            n = n + m
             dian = 0
         }
     }
@@ -89,8 +94,23 @@ class ViewController: UIViewController {
         else
         {
             m = Double(num.text!)!
+            switch flag {
+            case "a" :   n = n + m
+                         flag = "m"
+                break
+            case "m" :   n = n - m
+                         flag = "m"
+                break
+            case "r" :   n = n * m
+                         flag = "m"
+                break
+            case "e" :   n = n / m
+                         flag = "e"
+                break
+            default:
+                break
+            }
             num.text=""
-            n = n - m
             dian = 0
         }
     }
@@ -150,8 +170,7 @@ class ViewController: UIViewController {
         default:
             break
         }
-        display = String(sum)
-        num.text=display
+        num.text=String(sum)
         
     }
     @IBAction func button_zero(_ sender: Any) {
