@@ -17,9 +17,10 @@ class ViewController: UIViewController {
     var sum = 0.0
     var display:String = ""
     var flag:String = ""
+    var fag:String = ""
     var dian = 0
     var zero = 0
-    var z = 0
+    var z = 0.0
     var some = [Double]()
     @IBOutlet weak var num: UITextField!
     @IBAction func button1(_ sender: Any) {
@@ -105,7 +106,7 @@ class ViewController: UIViewController {
                          flag = "m"
                 break
             case "e" :   n = n / m
-                         flag = "e"
+                         flag = "m"
                 break
             default:
                 break
@@ -125,7 +126,28 @@ class ViewController: UIViewController {
         }
         else
         {
-            m = Double(num.text!)!
+            z = n
+            switch flag {
+            case "a" :   n = Double(num.text!)!
+                         flag = "r"
+                         fag = "a"
+                break
+            case "m" :   n = Double(num.text!)!
+                         flag = "r"
+                         fag = "m"
+                break
+            case "r" :   m = Double(num.text!)!
+                         n = n * m
+                         flag = "r"
+                break
+            case "e" :   m = Double(num.text!)!
+                         n = n / m
+                         flag = "r"
+                break
+            default:
+                break
+            }
+            
             num.text=""
             n = n * m
             dian = 0
@@ -150,28 +172,76 @@ class ViewController: UIViewController {
     }
     @IBAction func button_equal(_ sender: Any) {
         m = Double(num.text!)!
-        switch flag {
-        case "a" :   sum = n + m
-                     n = sum
-                     count = 0
-            break
-        case "m" :   sum = n - m
-                     n = sum
-                     count = 0
-            break
-        case "r" :   sum = n * m
-                     n = sum
-                     count = 0
-            break
-        case "e" :   sum = n / m
-                     n = sum
-                     count = 0
-            break
-        default:
-            break
+        if(z == 0)
+        {
+            switch flag {
+            case "a" :   sum = n + m
+                         n = sum
+                         count = 0
+                         break
+            case "m" :   sum = n - m
+                         n = sum
+                         count = 0
+                         break
+            case "r" :   sum = n * m
+                         n = sum
+                         count = 0
+                         break
+            case "e" :   sum = n / m
+                         n = sum
+                         count = 0
+                         break
+            default:
+                         break
+            }
+        }
+        else if(z != 0  && fag == "a")
+        {
+            switch flag {
+            case "a" :   sum = n + m
+                         n = sum
+                         count = 0
+                break
+            case "m" :   sum = n - m
+                         n = sum
+                         count = 0
+                break
+            case "r" :   sum = z+(n * m)
+                         n = sum
+                         count = 0
+                break
+            case "e" :   sum = z+(n / m)
+                         n = sum
+                         count = 0
+                break
+            default:
+                break
+            }
+        }
+        else if(z != 0  && fag == "m")
+        {
+            switch flag {
+            case "a" :   sum = n + m
+            n = sum
+            count = 0
+                break
+            case "m" :   sum = n - m
+            n = sum
+            count = 0
+                break
+            case "r" :   sum = z-(n * m)
+            n = sum
+            count = 0
+                break
+            case "e" :   sum = z-(n / m)
+            n = sum
+            count = 0
+                break
+            default:
+                break
+            }
         }
         num.text=String(sum)
-        
     }
     @IBAction func button_zero(_ sender: Any) {
         num.text=""
@@ -182,6 +252,8 @@ class ViewController: UIViewController {
         dian = 0
         display = ""
         flag = ""
+        fag = ""
+        z = 0.0
         num.text = ""
     }
     @IBAction func button_square(_ sender: Any) {
