@@ -40,7 +40,7 @@ class ViewController: UIViewController {
             {
                 num.text=num.text!+button1!!
             }
-           
+
         }
         else
         {
@@ -147,9 +147,7 @@ class ViewController: UIViewController {
             default:
                 break
             }
-            
             num.text=""
-            n = n * m
             dian = 0
         }
     }
@@ -164,9 +162,28 @@ class ViewController: UIViewController {
         }
         else
         {
-            m = Double(num.text!)!
+            z = n
+            switch flag {
+            case "a" :   n = Double(num.text!)!
+                         flag = "r"
+                         fag = "a"
+                break
+            case "m" :   n = Double(num.text!)!
+                         flag = "r"
+                         fag = "m"
+                break
+            case "r" :   m = Double(num.text!)!
+                         n = n * m
+                         flag = "r"
+                break
+            case "e" :   m = Double(num.text!)!
+                         n = n / m
+                         flag = "r"
+                break
+            default:
+                break
+            }
             num.text=""
-            n = n / m
             dian = 0
         }
     }
@@ -222,20 +239,20 @@ class ViewController: UIViewController {
         {
             switch flag {
             case "a" :   sum = n + m
-            n = sum
-            count = 0
+                         n = sum
+                         count = 0
                 break
             case "m" :   sum = n - m
-            n = sum
-            count = 0
+                         n = sum
+                         count = 0
                 break
             case "r" :   sum = z-(n * m)
-            n = sum
-            count = 0
+                         n = sum
+                         count = 0
                 break
             case "e" :   sum = z-(n / m)
-            n = sum
-            count = 0
+                         n = sum
+                         count = 0
                 break
             default:
                 break
