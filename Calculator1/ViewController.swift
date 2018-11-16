@@ -126,13 +126,15 @@ class ViewController: UIViewController {
         }
         else
         {
-            z = n
+            
             switch flag {
-            case "a" :   n = Double(num.text!)!
+            case "a" :   z = n
+                         n = Double(num.text!)!
                          flag = "r"
                          fag = "a"
                 break
-            case "m" :   n = Double(num.text!)!
+            case "m" :   z = n
+                         n = Double(num.text!)!
                          flag = "r"
                          fag = "m"
                 break
@@ -162,23 +164,24 @@ class ViewController: UIViewController {
         }
         else
         {
-            z = n
             switch flag {
-            case "a" :   n = Double(num.text!)!
-                         flag = "r"
+            case "a" :   z = n
+                         n = Double(num.text!)!
+                         flag = "e"
                          fag = "a"
-                break
-            case "m" :   n = Double(num.text!)!
-                         flag = "r"
+                         break
+            case "m" :   z = n
+                         n = Double(num.text!)!
+                         flag = "e"
                          fag = "m"
-                break
+                         break
             case "r" :   m = Double(num.text!)!
                          n = n * m
-                         flag = "r"
-                break
+                         flag = "e"
+                         break
             case "e" :   m = Double(num.text!)!
                          n = n / m
-                         flag = "r"
+                         flag = "e"
                 break
             default:
                 break
